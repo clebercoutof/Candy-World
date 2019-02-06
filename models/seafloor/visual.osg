@@ -1,0 +1,113 @@
+Group {
+  name "cubo.obj"
+  nodeMask 0xffffffff
+  cullingActive TRUE
+  num_children 1
+  Geode {
+    name "Cube"
+    nodeMask 0xffffffff
+    cullingActive TRUE
+    num_drawables 1
+    Geometry {
+      DataVariance STATIC
+      StateSet {
+        DataVariance STATIC
+        rendering_hint DEFAULT_BIN
+        renderBinMode INHERIT
+        Material {
+          name "Material"
+          ColorMode OFF
+          ambientColor 1 1 1 1
+          diffuseColor 0.64 0.64 0.64 1
+          specularColor 0.5 0.5 0.5 1
+          emissionColor 0 0 0 1
+          shininess 12.288
+        }
+      }
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 6
+      {
+        DrawElementsUShort TRIANGLE_STRIP 4
+        {
+          1 2 0 3 
+        }
+        DrawElementsUShort TRIANGLE_STRIP 4
+        {
+          7 4 6 5 
+        }
+        DrawElementsUShort TRIANGLE_STRIP 4
+        {
+          23 20 22 21 
+        }
+        DrawElementsUShort TRIANGLE_STRIP 4
+        {
+          19 16 18 17 
+        }
+        DrawElementsUShort TRIANGLE_STRIP 4
+        {
+          13 14 12 15 
+        }
+        DrawElementsUShort TRIANGLE_STRIP 4
+        {
+          9 10 8 11 
+        }
+      }
+      VertexArray Vec3Array 24
+      {
+        5 5 -5
+        5 -5 -5
+        -5 -5 -5
+        -5 5 -5
+        5 5 5
+        -5 5 5
+        -5 -5 5
+        4.99999 -5 5
+        5 5 -5
+        5 5 5
+        4.99999 -5 5
+        5 -5 -5
+        5 -5 -5
+        4.99999 -5 5
+        -5 -5 5
+        -5 -5 -5
+        -5 -5 -5
+        -5 -5 5
+        -5 5 5
+        -5 5 -5
+        5 5 5
+        5 5 -5
+        -5 5 -5
+        -5 5 5
+      }
+      NormalBinding PER_VERTEX
+      NormalArray Vec3Array 24
+      {
+        0 0 -1
+        0 0 -1
+        0 0 -1
+        0 0 -1
+        0 0 1
+        0 0 1
+        0 0 1
+        0 0 1
+        1 -0 0
+        1 -0 0
+        1 -0 0
+        1 -0 0
+        -0 -1 -0
+        -0 -1 -0
+        -0 -1 -0
+        -0 -1 -0
+        -1 0 -0
+        -1 0 -0
+        -1 0 -0
+        -1 0 -0
+        0 1 0
+        0 1 0
+        0 1 0
+        0 1 0
+      }
+    }
+  }
+}
